@@ -1,0 +1,29 @@
+\documentclass[14pt]{extbook} % Edit this line to change the documentclass.
+% Add custom preamble content below.
+% Example commands for using the Polyglossia package with French are
+% included for reference.
+% You may also have to edit config/lang.yml to sync up the HTML/EPUB/MOBI.
+% \usepackage{polyglossia}
+% \setdefaultlanguage{french}
+% \DeclareTextCommandDefault{\nobreakspace}{\leavevmode\nobreak\ }
+
+\usepackage{latex_styles/softcover}
+\VerbatimFootnotes % Allows verbatim text in footnotes
+\title{A Clockwork Heart}
+\subtitle{Change me}
+\author{Chad E Henderson}
+\date{}
+
+\begin{document}
+
+\includepdf{images/cover.pdf}
+\frontmatter
+\maketitle
+\tableofcontents
+\include{generated_polytex/preface}
+\mainmatter
+\include{generated_polytex/a_storm_approaches}
+\include{generated_polytex/along_came_a_spider}
+\include{generated_polytex/regenesis}
+\include{generated_polytex/a_second_chance}
+\end{document}
